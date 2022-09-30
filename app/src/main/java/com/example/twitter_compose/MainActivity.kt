@@ -7,6 +7,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -21,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.twitter_compose.feature.home.TweetModel
 import com.example.twitter_compose.ui.theme.TwitterTheme
+import com.example.twitter_compose.utils.SampleData
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +39,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun App() {
     // A surface container using the 'background' color from the theme
-    Tweet(TweetModel("Oskar Programming", "First compose tweet", null))
+    //Tweet(TweetModel("Oskar Programming", "First compose tweet", null))
+    TweetFeed(tweets = SampleData.tweetSample)
 }
 
 @Composable
@@ -67,6 +71,22 @@ private fun Tweet(tweet: TweetModel) {
     }
 }
 
+@Composable
+fun TweetFeed(tweets : List<TweetModel>) {
+    LazyColumn {
+        items(tweets) { tweet ->
+            Tweet(tweet = tweet)
+        }
+    }
+}
+
+@Preview
+@Composable
+fun previewTweetFeed(){
+    TwitterTheme {
+        TweetFeed(SampleData.tweetSample)
+    }
+}
 
 @Preview(showBackground = true)
 @Preview(
