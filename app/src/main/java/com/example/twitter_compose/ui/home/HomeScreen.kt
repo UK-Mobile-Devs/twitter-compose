@@ -1,4 +1,10 @@
 package com.example.twitter_compose.ui.home
 
-class HomeScreen {
+import androidx.compose.runtime.Composable
+
+
+@Composable
+fun HomeScreen() {
+
+
 }
