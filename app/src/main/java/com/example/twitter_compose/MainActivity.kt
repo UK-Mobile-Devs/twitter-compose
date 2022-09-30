@@ -83,10 +83,10 @@ private fun Tweet(tweet: TweetModel) {
             }
             Row(modifier = Modifier.padding(12.dp).fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                 Image(
-                    modifier = Modifier.clickable { isLiked = !isLiked },
-                    painter = painterResource(id = R.drawable.ic_star),
+                    modifier = Modifier.clickable {  },
+                    painter = painterResource(id = R.drawable.ic_reply),
                     colorFilter = ColorFilter.tint(starStateColour),
-                    contentDescription = "like",
+                    contentDescription = "reply",
                 )
                 Image(
                     modifier = Modifier.clickable {  },
@@ -95,10 +95,10 @@ private fun Tweet(tweet: TweetModel) {
                     contentDescription = "retweet",
                 )
                 Image(
-                    modifier = Modifier.clickable {  },
-                    painter = painterResource(id = R.drawable.ic_reply),
+                    modifier = Modifier.clickable { isLiked = !isLiked },
+                    painter = painterResource(id = R.drawable.ic_star),
                     colorFilter = ColorFilter.tint(starStateColour),
-                    contentDescription = "reply",
+                    contentDescription = "like",
                 )
             }
         }
