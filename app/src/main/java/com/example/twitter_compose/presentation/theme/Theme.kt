@@ -1,4 +1,4 @@
-package com.example.twitter_compose.ui.theme
+package com.example.twitter_compose.presentation.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

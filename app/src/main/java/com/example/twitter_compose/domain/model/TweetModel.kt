@@ -1,4 +1,4 @@
-package com.example.twitter_compose.feature.home
+package com.example.twitter_compose.domain.model
 
 import java.util.*
 

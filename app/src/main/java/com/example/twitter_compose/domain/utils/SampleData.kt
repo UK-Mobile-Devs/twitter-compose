@@ -1,6 +1,6 @@
-package com.example.twitter_compose.utils
+package com.example.twitter_compose.domain.utils
 
-import com.example.twitter_compose.feature.home.TweetModel
+import com.example.twitter_compose.domain.model.TweetModel
 
 object SampleData {
 
