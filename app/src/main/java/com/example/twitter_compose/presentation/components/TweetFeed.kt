@@ -9,18 +9,18 @@ import com.example.twitter_compose.domain.utils.SampleData
 import com.example.twitter_compose.presentation.theme.TwitterTheme
 
 @Composable
-fun TweetFeed(tweets: List<TweetModel>) {
+fun TweetFeed(tweets: List<TweetModel>, onItemLiked: () -> Unit) {
     LazyColumn {
         items(tweets) { tweet ->
-            Tweet(tweet = tweet, null)
+            Tweet(tweet = tweet, onItemLiked)
         }
     }
 }
 
-@Preview
-@Composable
-fun previewTweetFeed() {
-    TwitterTheme {
-        TweetFeed(SampleData.tweetSample)
-    }
-}
+//@Preview
+//@Composable
+//fun previewTweetFeed() {
+//    TwitterTheme {
+//        TweetFeed(SampleData.tweetSample)
+//    }
+//}

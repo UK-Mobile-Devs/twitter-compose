@@ -88,15 +88,15 @@ fun Tweet(tweet: TweetModel, onLikeClick: () -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
-@Preview(
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-    showBackground = true,
-    name = "Dark Mode"
-)
-@Composable
-fun DefaultPreview() {
-    TwitterTheme {
-        Tweet(TweetModel("Oskar Brown", "First compose tweet", null), null)
-    }
-}
+//@Preview(showBackground = true)
+//@Preview(
+//    uiMode = Configuration.UI_MODE_NIGHT_YES,
+//    showBackground = true,
+//    name = "Dark Mode"
+//)
+//@Composable
+//fun DefaultPreview() {
+//    TwitterTheme {
+//        Tweet(TweetModel("Oskar Brown", "First compose tweet", null), null)
+//    }
+//}
