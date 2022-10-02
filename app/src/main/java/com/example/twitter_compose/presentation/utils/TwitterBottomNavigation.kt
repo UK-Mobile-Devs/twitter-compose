@@ -26,7 +26,7 @@ fun BottomNavigation(
         contentColor = contentColor,
         elevation = elevation,
         modifier = modifier,
-        shape = RoundedCornerShape(percent = 50)
+        shape = RoundedCornerShape(percent = 0)
     ) {
         Row(
             Modifier.height(56.dp).selectableGroup(),

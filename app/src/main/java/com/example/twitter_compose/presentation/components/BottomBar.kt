@@ -23,7 +23,7 @@ fun BottomBar(navController: NavController){
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-    BottomNavigation(backgroundColor = Color(0xFFE1E1E1)) {
+    BottomNavigation(backgroundColor = Color(Color.White.value)) {
         BottomNavigationItem(icon = { Icon(imageVector = Icons.Default.AddCircle, contentDescription = "Home") },
             selectedContentColor = Color.Black,
             unselectedContentColor = Color.White,

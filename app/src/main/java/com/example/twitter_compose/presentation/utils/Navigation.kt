@@ -53,7 +53,6 @@ fun SetupNavigation(startDestination: String) {
         bottomBar = {
             if ((currentRoute == Screen.HomeFeed.route && state)) {
                 Column(
-                    modifier = Modifier.padding(115.dp, 25.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Box(contentAlignment = Alignment.Center) {
