@@ -6,7 +6,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
-import com.example.twitter_compose.presentation.components.CreateTweet
+import com.example.twitter_compose.presentation.components.NewTweetScreen
 
 
 @Composable
@@ -16,5 +16,5 @@ fun TweetScreen(navController: NavController) {
     context.window.statusBarColor = Color.Gray.toArgb()
     context.window.navigationBarColor = Color.White.toArgb()
 
-    CreateTweet()
+    NewTweetScreen()
 }

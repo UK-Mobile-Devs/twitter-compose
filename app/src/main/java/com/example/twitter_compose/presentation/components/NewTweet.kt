@@ -12,7 +12,7 @@ import com.example.twitter_compose.R
 
 
 @Composable
-fun CreateTweet() {
+fun NewTweetScreen() {
     Surface(
         color = MaterialTheme.colors.primary
     ) {
