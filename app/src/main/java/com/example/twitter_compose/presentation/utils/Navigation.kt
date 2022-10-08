@@ -2,7 +2,6 @@ package com.example.twitter_compose.presentation.utils
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.Scaffold
@@ -11,8 +10,6 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -20,6 +17,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.twitter_compose.presentation.components.BottomBar
 import com.example.twitter_compose.ui.home.HomeScreen
+import com.example.twitter_compose.ui.tweet.TweetScreen
 
 @Composable
 fun NavigationGraph(
@@ -39,7 +37,7 @@ fun NavigationGraph(
         composable(
             route = Screen.TweetFeed.route
         ) {
-
+            TweetScreen(navController = navController)
         }
     }
 }

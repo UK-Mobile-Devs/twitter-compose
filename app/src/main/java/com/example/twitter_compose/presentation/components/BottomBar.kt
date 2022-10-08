@@ -30,7 +30,7 @@ fun BottomBar(navController: NavController) {
             alwaysShowLabel = false,
             selected = currentRoute == Screen.HomeFeed.route,
             onClick = {
-                navController.navigate(Screen.HomeFeed.route) {
+                navController.navigate(Screen.TweetFeed.route) {
                     popUpTo(navController.graph.findStartDestination().id) {
                         saveState = true
                     }

@@ -1,6 +1,5 @@
 package com.example.twitter_compose.presentation.components
 
-import android.content.res.Configuration
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -14,11 +13,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.twitter_compose.R
 import com.example.twitter_compose.domain.model.TweetModel
-import com.example.twitter_compose.presentation.theme.TwitterTheme
 
 
 @Composable
@@ -27,7 +24,6 @@ fun Tweet(tweet: TweetModel, onLikeClick: () -> Unit) {
     val starStateColour by animateColorAsState(
         if (isLiked) lightColors().surface else darkColors().secondary
     )
-
     Surface(
         color = MaterialTheme.colors.primary,
         modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp)
