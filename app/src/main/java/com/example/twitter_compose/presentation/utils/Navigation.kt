@@ -36,6 +36,11 @@ fun NavigationGraph(
         ) {
             HomeScreen(navController = navController)
         }
+        composable(
+            route = Screen.TweetFeed.route
+        ) {
+
+        }
     }
 }
 
