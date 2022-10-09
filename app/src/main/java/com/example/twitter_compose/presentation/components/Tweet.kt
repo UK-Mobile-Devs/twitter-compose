@@ -10,6 +10,7 @@ import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
@@ -61,13 +62,13 @@ fun Tweet(tweet: TweetModel, onLikeClick: () -> Unit) {
                 Image(
                     modifier = Modifier.clickable { },
                     painter = painterResource(id = R.drawable.ic_reply),
-                    colorFilter = ColorFilter.tint(starStateColour),
+                    colorFilter = ColorFilter.tint(Color.Gray),
                     contentDescription = "reply",
                 )
                 Image(
                     modifier = Modifier.clickable { },
                     painter = painterResource(id = R.drawable.ic_retweet),
-                    colorFilter = ColorFilter.tint(starStateColour),
+                    colorFilter = ColorFilter.tint(Color.Gray),
                     contentDescription = "retweet",
                 )
                 Image(
