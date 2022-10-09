@@ -16,5 +16,5 @@ fun TweetScreen(navController: NavController) {
     context.window.statusBarColor = Color.Gray.toArgb()
     context.window.navigationBarColor = Color.White.toArgb()
 
-    NewTweetScreen()
+    NewTweetScreen(navController)
 }
