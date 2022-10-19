@@ -5,14 +5,13 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Surface
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.twitter_compose.domain.utils.SampleData
-import com.example.twitter_compose.presentation.components.TweetFeed
 import com.example.twitter_compose.presentation.theme.TwitterTheme
 import com.example.twitter_compose.presentation.utils.Screen
 import com.example.twitter_compose.presentation.utils.SetupNavigation
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
